@@ -122,7 +122,7 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(noctilux)
+   dotspacemacs-themes '(leuven)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
@@ -311,7 +311,9 @@ you should place your code here."
   (setq org-fontify-whole-heading-line t
         git-magit-status-fullscreen t
         powerline-default-separator nil)
-  (global-git-commit-mode t))
+  (global-git-commit-mode t)
+  ;; The default background color of leuven is too light.
+  (set-background-color "gray96"))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
