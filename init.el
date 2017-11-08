@@ -311,9 +311,7 @@ you should place your code here."
   (setq org-fontify-whole-heading-line t
         git-magit-status-fullscreen t
         powerline-default-separator nil)
-  (global-git-commit-mode t)
-  ;; The default background color of leuven is too light.
-  (set-background-color "gray96"))
+  (global-git-commit-mode t))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
